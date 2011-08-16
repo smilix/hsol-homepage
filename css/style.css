@@ -75,6 +75,8 @@ body {
 /* header */
 header {
   border-bottom: #cccccc solid 1px;
+  position:fixed;
+  top:0;
 }
 
 header a {
