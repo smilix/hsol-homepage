@@ -69,6 +69,7 @@ td { vertical-align: top; }
 body {
   margin: 20px auto;
   width: 1050px;  
+  height: 100%;
   /*background: url('../images/background.png') center center;*/
 }
 
@@ -77,6 +78,7 @@ header {
   border-bottom: #cccccc solid 1px;
   position:fixed;
   top:0;
+  background:white;
 }
 
 header a {
@@ -111,8 +113,20 @@ header a:hover {
 }
 
 /* content */ 
+#container{
+	display:table;
+	height:100%;
+	
+}
 #main {
 	margin: 30px auto;
+	margin-top:117px;
+	margin-bottom:138px;
+	#position: absolute;  
+	#top: 50%;
+	display: table-cell; 
+	vertical-align: middle;
+	height:100%;
 }
 #main .navArrow {
 	width: 68px;
@@ -130,11 +144,12 @@ header a:hover {
 }
 #content {
 	width: 800px;
-	height: 500px;	
+	height: 100%;	
 	float:left;
 	border: 1px solid #808080;
 	overflow: hidden;
 	overflow-y: scroll;
+	positon:relative;
 }
 
 .js #content {    
@@ -155,6 +170,9 @@ header a:hover {
 footer {
   border-top: #cccccc solid 1px;
   color: #5d5e60;
+  position:fixed;
+  bottom:0;
+  background:white;
 }
 
 #logo {
