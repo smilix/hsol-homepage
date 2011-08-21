@@ -66,6 +66,12 @@ td { vertical-align: top; }
    Author: KtT
    ========================================================================== */
    
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   margin: 20px auto;
   width: 1050px;  
@@ -112,21 +118,24 @@ header a:hover {
 	padding-left: 75px;	
 }
 
+#floater {
+  position:relative;
+  float:left;
+  height:50%;
+  margin-bottom:-287px;
+  width:1px;
+}
+
 /* content */ 
-#container{
-	display:table;
-	height:100%;
-	
+#container {
+	display: table; 
+	position: relative;
+	clear: left;
+	height: 500px;
 }
 #main {
-	margin: 30px auto;
-	margin-top:117px;
-	margin-bottom:138px;
-	#position: absolute;  
-	#top: 50%;
 	display: table-cell; 
 	vertical-align: middle;
-	height:100%;
 }
 #main .navArrow {
 	width: 68px;
@@ -134,7 +143,7 @@ header a:hover {
 	text-indent: -8000px;
 	display: block;
 	float: left;
-	margin: 180px 28px;
+	margin: 180px 27px;
 }
 #nav_back {
 	background: url('../images/arrow_left.png') left top no-repeat;
@@ -166,6 +175,7 @@ header a:hover {
 	height: 500px;	
 	padding: 5px;
 }
+
 /* footer */
 footer {
   border-top: #cccccc solid 1px;
